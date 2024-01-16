@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Idioms CRUD</title>
+</head>
+<body>
+    <h1>Idioms</h1>
+
+      <!-- Display current idiom -->
+      <div>
+        <h2>{{ idiom.phrase }}</h2>
+        <p>{{ idiom.context }}</p>
+    </div>
+
+    <!-- Buttons to navigate to the next and previous idioms -->
+    <a href="{{ url_for('next_idiom') }}">Next</a>
+    <a href="{{ url_for('previous_idiom') }}">Previous</a>
+
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="alert alert-success">
+            {{ messages[0] }}
+        </div>
+    {% endif %}
+{% endwith %}
+
+
+    <!-- Form to search idioms -->
+    <form action="{{ url_for('search_idiom') }}" method="get">
+        <input type="text" name="query" placeholder="Search">
+        <input type="submit" value="Search">
+    </form>
+
+    <!-- Display all idioms -->
+    {% for idiom in idioms %}
+    <div>
+        <h2>{{ idiom.phrase }}</h2>
+        <p>{{ idiom.context }}</p>
+        <!-- Update and Delete links -->
+        <form action="{{ url_for('update_idiom', id=idiom.id) }}" method="post">
+            <input type="text" name="phrase" value="{{ idiom.phrase }}">
+            <textarea name="context">{{ idiom.context }}</textarea>            <input type="submit" value="Update">
+        </form>
+        <a href="{{ url_for('delete_idiom', id=idiom.id) }}">Delete</a>
+    </div>
+    {% endfor %}
+
+    <!-- Form to add a new idiom -->
+    <form method="POST" action="{{ url_for('add_idiom') }}">
+        <input type="text" name="phrase" required>
+        <textarea name="context" required></textarea>        
+        <input type="submit" value="Add Idiom">
+    </form>
+
+    <!-- Form to import idioms from a JSON file -->
+    <form action="{{ url_for('import_json') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Import JSON">
+    </form>
+</body>
+</html>

@@ -1,0 +1,774 @@
+{
+    "idioms": [
+        {
+            "phrase": "\"Rub It In: Teasing someone to make them feel even worse after a defeat."
+        },
+        {
+            "context": [
+                "Alright",
+                " you beat me. But there\u2019s no need to rub it in.\""
+            ]
+        },
+        {
+            "phrase": "\"Walk on Eggshells: Being very careful when you are dealing with a very tense situation/person."
+        },
+        {
+            "context": [
+                "After our argument last night",
+                " I feel like I\u2019m walking on eggshells around her today.\""
+            ]
+        },
+        {
+            "phrase": "\"See Something Out of the Corner of Your Eye: Use peripheral vision"
+        },
+        {
+            "context": [
+                "I saw movement out of the corner of my eye and was able to pick out the person hiding.\""
+            ]
+        },
+        {
+            "phrase": "\"Speak of the Devil (and He Shall Appear): when you have been talking about someone and they immediately walk in.."
+        },
+        {
+            "context": [
+                "Speak of the devil",
+                " here he is!\""
+            ]
+        },
+        {
+            "phrase": "\"Sweet Dreams!: I hope you get great sleep tonight."
+        },
+        {
+            "context": [
+                "Goodnight",
+                " sweet dreams.\""
+            ]
+        },
+        {
+            "phrase": "\"Wild Goose Chase: going to search for something which seems to yield no results."
+        },
+        {
+            "context": [
+                "He led us on a wild goose chase",
+                " we didn;t even find any evidence.\""
+            ]
+        },
+        {
+            "phrase": "\"Sneak Peek: Getting to see someone early before it is completed or made public to the world."
+        },
+        {
+            "context": [
+                "Can I get a sneak peek of your new song before it\u2019s released?\""
+            ]
+        },
+        {
+            "phrase": "\"Second Wind: Regaining your energy."
+        },
+        {
+            "context": [
+                "I found my second wind near the end of the basketball.\""
+            ]
+        },
+        {
+            "phrase": "\"Scare the Living Daylights Out of Someone: To be terrified by someone."
+        },
+        {
+            "context": [
+                "Christ",
+                " you scared the living daylights out of me! Don\u2019t creep up on me again.\""
+            ]
+        },
+        {
+            "phrase": "\"Touch One\u2019s Heart: Affect someone emotionally, be touching."
+        },
+        {
+            "context": [
+                "Your letter of gratitude touched my heart.\""
+            ]
+        },
+        {
+            "phrase": "\"Throw Someone Under the Bus: Revealing something that someone did that wasn\u2019t meant to be known."
+        },
+        {
+            "context": [
+                "Why did you have to throw him under the bus! He wasn\u2019t ready to tell people about his sexuality yet.\""
+            ]
+        },
+        {
+            "phrase": "\"The tables have turned: Reverse a situation, you now have the upper hand in a situation where you previously had the lower hand. (This works vice versa)."
+        },
+        {
+            "context": [
+                "Oh",
+                " would you look at how the tables have turned! It looks like you\u2019ll be the one apologising to me",
+                " not the other way around.\""
+            ]
+        },
+        {
+            "phrase": "\"Up in the Air: Nothing has yet been concluded."
+        },
+        {
+            "phrase": "The final date of the interview is still up in the air at the moment.\""
+        },
+        {
+            "phrase": "\"Take a Deep Dive (Into): To go depth with your exploration."
+        },
+        {
+            "context": [
+                "I\u2019m going to take a deep dive into the topic of racial prejudice in Europe through the 90s.\""
+            ]
+        },
+        {
+            "phrase": "\"Rear Its Ugly Head: A problem that comes out unexpectedly."
+        },
+        {
+            "context": [
+                "CAncer reared its ugly head.\""
+            ]
+        },
+        {
+            "phrase": "\"We\u2019ll Cross That Bridge: When the problem has arrived and can\u2019t be ignored anymore then we will think of a solution."
+        },
+        {
+            "context": [
+                "\u201cWhat about if it rains on the day?\u201d \u201cWe\u2019ll cross that bridge when we come to it.\u201d\""
+            ]
+        },
+        {
+            "phrase": "\"Run in the Family: A particular trait/behavior that seems to be common in a family."
+        },
+        {
+            "context": [
+                "Impatience seems to run in the family.\""
+            ]
+        },
+        {
+            "phrase": "\"Third Time\u2019s a Charm/Third Time Lucky: Even if you\u2019ve failed the last two times you still have one more go, and that is likely to come out with a positive result."
+        },
+        {
+            "context": [
+                "I failed my driving test twice. But hey ho",
+                " third time lucky...\""
+            ]
+        },
+        {
+            "phrase": "\"Trash Talk: Insults directed at one\u2019s opponent in a sporting event or contest."
+        },
+        {
+            "context": [
+                "They\u2019re giving each other trash talk in the pre match interviews.\""
+            ]
+        },
+        {
+            "phrase": "\"Tongue-in-Cheek: Said ironically; not meant to be taken seriously."
+        },
+        {
+            "context": [
+                "I only meant it tongue in cheek",
+                " don\u2019t take it too seriously.\""
+            ]
+        },
+        {
+            "phrase": "\"Take The Mickey (Piss) (Out Of Someone):To have banter with someone but making fun of them."
+        },
+        {
+            "context": [
+                "Hey",
+                " stop taking the mickey out of me!\""
+            ]
+        },
+        {
+            "phrase": "\"Up in Arms: Angry, protesting (usually said of a group)."
+        },
+        {
+            "context": [
+                "The fans are up in arms about the way the chairman has conducted business.\""
+            ]
+        },
+        {
+            "phrase": "\"Test the Waters: Try something out in a preliminary way."
+        },
+        {
+            "context": [
+                "Before going all in",
+                " we need to test the waters first.\""
+            ]
+        },
+        {
+            "phrase": "\"Where There\u2019s a Will, There\u2019s a Way: If you have a strong desire to accomplish something, you will achieve it even in the face of considerable odds."
+        },
+        {
+            "context": [
+                "I don\u2019t know how I\u2019m going to make it",
+                " but when there\u2019s a will",
+                " there\u2019s a way.\""
+            ]
+        },
+        {
+            "phrase": "\"Up for Grabs: It\u2019s free for anyone to take."
+        },
+        {
+            "context": [
+                "At this point in the game",
+                " first prize is still up for grabs.\""
+            ]
+        },
+        {
+            "phrase": "\"Turn Something on Its Head: Reverse something, cause something to be done in a new way."
+        },
+        {
+            "context": [
+                "The new variant of the disease has turned the country\u2019s healing efforts on it\u2019s head.\""
+            ]
+        },
+        {
+            "phrase": "\"Take a Hike: Go away you're not wanted."
+        },
+        {
+            "context": [
+                "Take a hike",
+                " this is an invite only club.\""
+            ]
+        },
+        {
+            "phrase": "\"To be Smitten With Someone: To like and fancy someone"
+        },
+        {
+            "context": [
+                "He\u2019s absolutely smitten with his new girlfriend.\""
+            ]
+        },
+        {
+            "phrase": "\"Rookie Mistake: An error made by someone who is inexperienced."
+        },
+        {
+            "context": [
+                "Sticking your finger in the dog\u2019s mouth was a rookie mistake.\""
+            ]
+        },
+        {
+            "phrase": "\"Short Fuse: Someone that can easily get angry and reacts abrupts quickly."
+        },
+        {
+            "context": [
+                "he\u2019s got a short fuse so don\u2019t tease him too much.\""
+            ]
+        },
+        {
+            "phrase": "\"Window Shop: To look at merchandise in a store without intending to buy it."
+        },
+        {
+            "context": [
+                "I haven\u2019t got much money",
+                " but we can go window shopping.\""
+            ]
+        },
+        {
+            "phrase": "\"Tough Cookie: Someone who has a strong spirit, with a lot of determination and is able to persevere in hard situations."
+        },
+        {
+            "context": [
+                "He\u2019ll be fine with his injury",
+                " he\u2019s a tough cookie.\""
+            ]
+        },
+        {
+            "phrase": "\"Under the Weather: not feeling very well."
+        },
+        {
+            "context": [
+                "She won\u2019t be at work today",
+                " she\u2019s been under the weather.\""
+            ]
+        },
+        {
+            "phrase": "\"Tie the Knot: Get married."
+        },
+        {
+            "context": [
+                "My best friend tied the knot yesterday.\""
+            ]
+        },
+        {
+            "phrase": "\"Your Guess Is as Good as Mine: I don\u2019t know; I have no idea."
+        },
+        {
+            "context": [
+                "\u201cWhat ever happened to Carly Rae Jepsen?\u201d \u201cYour guess is as good as mine.\u201d\""
+            ]
+        },
+        {
+            "phrase": "Take It or Leave It (command): Stuck with choices, there are only two options available to you to make a decision on."
+        },
+        {
+            "phrase": "\"Stand One\u2019s Ground: To stop tolerating being mistreated and pushed round and taken advantage of."
+        },
+        {
+            "context": [
+                "Dominic tried to take advantage of his younger sister",
+                " but she stood her ground.\""
+            ]
+        },
+        {
+            "phrase": "\"The Time is Ripe: If you say that the time is ripe, you mean that it is a suitable point for a particular activity."
+        },
+        {
+            "context": [
+                "The time is ripe for me to ask her out to dinner.\""
+            ]
+        },
+        {
+            "phrase": "\"To Bear Fruit: To develop in a profitable or positive way."
+        },
+        {
+            "context": [
+                "After lots of hard work",
+                " our efforts are bearing fruit.\""
+            ]
+        },
+        {
+            "phrase": "\"When In Doubt, Leave It Out: When unsure about something, omit it."
+        },
+        {
+            "context": [
+                "\u201cI\u2019m not sure if this idiom actually exists?\u201d \u201cIf in doubt",
+                " leave it out.\u201d\""
+            ]
+        },
+        {
+            "phrase": "\"Stand On One\u2019s Own Two Feet: To be independent, being able to take care of oneself without the need of anyone else."
+        },
+        {
+            "context": [
+                "I hear you crying but that\u2019s on you. You can make it through",
+                " why don\u2019t you stand on your two legs?\""
+            ]
+        },
+        {
+            "phrase": "\"Take the Edge Off (of Something): To do something that will calm your nerves."
+        },
+        {
+            "context": [
+                "Have a beer before the date",
+                " it\u2019ll take the edge off.\""
+            ]
+        },
+        {
+            "phrase": "\"Seize the Day: To make the most out of your day."
+        },
+        {
+            "context": [
+                "Seize the day",
+                " wake up early and get your important tasks done before lunchtime!\""
+            ]
+        },
+        {
+            "phrase": "\"Wake Up on the Wrong Side of the Bed: Woke up being moody or grumpy."
+        },
+        {
+            "context": [
+                "You\u2019re being so rude",
+                " did you wake up on the wrong side of the bed this morning?\""
+            ]
+        },
+        {
+            "phrase": "\"Roll With the Punches: Deal with problems by being flexible."
+        },
+        {
+            "context": [
+                "The machine ran out of batteries while on stage but we rolled with the punches and improvised the rest of the scene.\""
+            ]
+        },
+        {
+            "phrase": "\"Sleep Like a Baby: To experience a very deep and restful sleep; to sleep soundly."
+        },
+        {
+            "context": [
+                "I was so tired",
+                " I slept like a baby.\""
+            ]
+        },
+        {
+            "phrase": "\"Under Someone\u2019s Spell: Fascinated, entranced by someone and not being able to see them clearly."
+        },
+        {
+            "context": [
+                "Jack doesn\u2019t take notice of Henry\u2019s manipulative ways",
+                " he\u2019s too under his spell.\""
+            ]
+        },
+        {
+            "phrase": "\"Tip of the Iceberg: A small, visible part of a much larger problem."
+        },
+        {
+            "context": [
+                "The shortened version of the story you shared during the 2 minute interview was only the tip of the iceberg.\""
+            ]
+        },
+        {
+            "phrase": "\"Young at Heart: Having a youthful outlook, regardless of age."
+        },
+        {
+            "context": [
+                "I\u2019m not surprised grandad terry wanted to go bowling",
+                " he\u2019s young at heart.\""
+            ]
+        },
+        {
+            "phrase": "\"Under (Below) the Radar: To not be noticed."
+        },
+        {
+            "context": [
+                "If you don\u2019t tell the chatterbox of the group",
+                " it\u2019s easy for your dark secret to stay under the radar.\""
+            ]
+        },
+        {
+            "phrase": "\"Think Big: Consider ambitious plans; avoid becoming overly concerned with details."
+        },
+        {
+            "context": [
+                "Stop worrying about the little bumps in the road",
+                " think biG!\""
+            ]
+        },
+        {
+            "phrase": "\"Slippery Slope: A series of undesirable effects that, one warns, could result from a certain action."
+        },
+        {
+            "context": [
+                "Using addictive drugs is a slippery slope.\""
+            ]
+        },
+        {
+            "phrase": "\"Wandering Eye: Never being satisfied with what you have, always looking for something else."
+        },
+        {
+            "context": [
+                "I\u2019m happy with Katie",
+                " but I just can\u2019t stop my wandering eye.\""
+            ]
+        },
+        {
+            "phrase": "\"Set the Bar (Too) High: Having a high expectation for something."
+        },
+        {
+            "context": [
+                "You\u2019ve set the bar too high",
+                " you can\u2019t expect such a high quality of work on the student\u2019s first day at school.\""
+            ]
+        },
+        {
+            "phrase": "\"Throw in the Towel: To surrender or end something."
+        },
+        {
+            "context": [
+                "You guys carry on playing",
+                " but i\u2019m going to throw in the towel.\""
+            ]
+        },
+        {
+            "phrase": "\"Set in Stone: Stuck in a definite state."
+        },
+        {
+            "context": [
+                "The date is not set in stone",
+                " we will see when everyone else is free.\""
+            ]
+        },
+        {
+            "phrase": "\"To Get Cold Feet: To experience reluctance or to change your mind after making a commitment."
+        },
+        {
+            "context": [
+                "After we agreed to get married",
+                " I got cold feet.\""
+            ]
+        },
+        {
+            "phrase": "\"What Do You Make of (Him)?: What are your thoughts on him after you initial impression."
+        },
+        {
+            "context": [
+                "I liked the new trainee today",
+                " but what do you make of him?\""
+            ]
+        },
+        {
+            "phrase": "\"What Goes Around Comes Around: Every action you take will eventually come back round your way."
+        },
+        {
+            "context": [
+                "You can treat him poorly",
+                " but what goes around comes around.\""
+            ]
+        },
+        {
+            "phrase": "\"Taste of Your Own Medicine: The same unpleasant experience or treatment that one has given to others."
+        },
+        {
+            "context": [
+                "Someone was rude to you? You\u2019ve been rude to me",
+                " so I\u2019m glad you got a taste of your own medicine.\""
+            ]
+        },
+        {
+            "phrase": "\"Take It on The Chin: Don\u2019t cry about it, be strong."
+        },
+        {
+            "context": [
+                "everyone receives constructive criticism sometimes. You need to take it on the chin and use it as motivation to improve.\""
+            ]
+        },
+        {
+            "phrase": "\"Shoot Oneself In The Foot: Do something that damages oneself or one\u2019s own cause."
+        },
+        {
+            "context": [
+                "You\u2019ve shot yourself in the foot by not bringing your wallet to the casino.\""
+            ]
+        },
+        {
+            "phrase": "\"Wash Your Hands of (Something): Decline to take further responsibility; refuse to be involved with something anymore."
+        },
+        {
+            "context": [
+                "I wash my hands of any part in your silly scheme.\""
+            ]
+        },
+        {
+            "phrase": "\"Whipped : Being under the control of your partner."
+        },
+        {
+            "context": [
+                "We never see Robbie anymore. He\u2019s so whipped.\""
+            ]
+        },
+        {
+            "phrase": "\"Toot Your Own Horn: To brag or talk heavily about your own achievement when others have not even mentioned it."
+        },
+        {
+            "context": [
+                "Stop bragging",
+                " no one likes a trumpet that toots their own horn.\""
+            ]
+        },
+        {
+            "phrase": "\"Think Outside the Box: Being creative with the way you approach and solve a problem/issue"
+        },
+        {
+            "context": [
+                "Your normal tactics won\u2019t work on this problem child. You\u2019re going to have to think outside the box to get him to behave.\""
+            ]
+        },
+        {
+            "phrase": "\"Race Against Time: In a hurry to get a piece of work done in time."
+        },
+        {
+            "context": [
+                "I\u2019m in a race against time to find the cure before innocent people die.\""
+            ]
+        },
+        {
+            "phrase": "\"U Turn: A complete change of opinion, direction, etc."
+        },
+        {
+            "context": [
+                "He\u2019s done a U turn on his decision to move away.\""
+            ]
+        },
+        {
+            "phrase": "\"To Have Butterflies In Your Stomach: To be nervous."
+        },
+        {
+            "context": [
+                "I have butterflies in my stomach when I'm around her.\""
+            ]
+        },
+        {
+            "phrase": "Take a Rain Check: Decline an invitation but suggest that you\u2019ll accept it at a later time."
+        },
+        {
+            "phrase": "\"Sitting Duck: Something or someone easily attacked or criticized."
+        },
+        {
+            "context": [
+                "The elderly are sitting ducks. Let\u2019s rob them.\""
+            ]
+        },
+        {
+            "phrase": "\"Take Something with a Pinch (grain) of Salt: Don't think what people say too seriously."
+        },
+        {
+            "context": [
+                "He said he used to play for England",
+                " but I\u2019d take what he said with a pinch of salt.\""
+            ]
+        },
+        {
+            "phrase": "\"Soak Up the Sun: enjoy the sunshine."
+        },
+        {
+            "context": [
+                "I\u2019m soaking up the sun today.\""
+            ]
+        },
+        {
+            "phrase": "\"The odds are stacked against you: You are in an Unfavorable situation where success is unlikely."
+        },
+        {
+            "context": [
+                "The odds are stacked against you",
+                " it\u2019ll take a lot of hard work to even match him",
+                " let alone beat him.\""
+            ]
+        },
+        {
+            "phrase": "\"Show One\u2019s True Colors: someone's who reveals their true intentions."
+        },
+        {
+            "context": [
+                "After all that lying",
+                " he\u2019s shown his true colours.\""
+            ]
+        },
+        {
+            "phrase": "\"Start with a Clean Slate: Having a fresh start and forgetting about the past attempts to do something."
+        },
+        {
+            "context": [
+                "Although we had a rough time yesterday",
+                " today we start with a clean slate.\""
+            ]
+        },
+        {
+            "phrase": "\"Take the High Road: Being the more moral person in an argument and diffusing the argument even though you are right."
+        },
+        {
+            "context": [
+                "If you say so. I\u2019m going to take the high road and leave it.\""
+            ]
+        },
+        {
+            "phrase": "\"To be the Apple of Someone\u2019s Eye: To be loved and treasured by someone"
+        },
+        {
+            "context": [
+                "You\u2019re the apple of my eye",
+                " i can\u2019t live without you.\""
+            ]
+        },
+        {
+            "phrase": "\"Sweeten the Deal: Making a deal more attractive by adding a diresable offer to the mix."
+        },
+        {
+            "context": [
+                "I\u2019ll sweeten the deal; how about a bonus paycheck too?\""
+            ]
+        },
+        {
+            "phrase": "\"Turn a Blind Eye: To choose to ignore something."
+        },
+        {
+            "context": [
+                "Seeing as I don\u2019t have the time to deal with another drug possession case",
+                " I\u2019m going to turn a blind eye.\""
+            ]
+        },
+        {
+            "phrase": "\"Steal Someone\u2019s Thunder: To outshine and out perform someone who was previously seen/has the reputation as the best at something."
+        },
+        {
+            "context": [
+                "Don\u2019t steal my thunder",
+                " that was my joke!\""
+            ]
+        },
+        {
+            "phrase": "\"That\u2019s a Stretch: someone exaggerated a fact or a story, or someone coming to a concussion that\u2019s presumptuous."
+        },
+        {
+            "context": [
+                "He said he fought them all off by himself? Hmmmm",
+                " I don't know about that",
+                " that\u2019s a stretch.\""
+            ]
+        },
+        {
+            "phrase": "\"Sold On (Something): Convinced of something."
+        },
+        {
+            "context": [
+                "I\u2019m sold on the idea",
+                " let\u2019s make it happen!\""
+            ]
+        },
+        {
+            "phrase": "\"See Eye to Eye: To finally agree on something."
+        },
+        {
+            "context": [
+                "I\u2019m glad we can see eye to eye on this important topic.\""
+            ]
+        },
+        {
+            "phrase": "\"Your Number Is Up: You are going to die (or suffer some bad misfortune or setback)."
+        },
+        {
+            "context": [
+                "Your number is up. You\u2019re going to jail for the rest of your life.\""
+            ]
+        },
+        {
+            "phrase": "\"You Know the Drill: You are already familiar with the procedure."
+        },
+        {
+            "context": [
+                "Alright",
+                " same task as we do every monday guys",
+                " you know the drill.\""
+            ]
+        },
+        {
+            "phrase": "\"To Pop (one\u2019s) Cherry: To lose your virginity."
+        },
+        {
+            "context": [
+                "I popped her cherry.\""
+            ]
+        },
+        {
+            "phrase": "\"You Can Say That Again!: I agree totally!"
+        },
+        {
+            "context": [
+                "\u201cThis food is exquisite.\u201d \u201cMmmm. You can say that again.\u201d\""
+            ]
+        },
+        {
+            "phrase": "\"Teach an Old Dog New Tricks: trying to change a person's perspective on a subject that they have long held a strong opinion on."
+        },
+        {
+            "context": [
+                "The veteran salesman isn\u2019t going to listen to your story about how you\u2019ve increased sales through using social media. You can\u2019t teach an old dog new tricks.\""
+            ]
+        },
+        {
+            "phrase": "\"To Each His Own: People have different preferences."
+        },
+        {
+            "context": [
+                "I wouldn\u2019t smoke cigarettes myself",
+                " but each to their own.\""
+            ]
+        },
+        {
+            "phrase": "\"Up to Scratch: Meeting a basic standard of competence or quality."
+        },
+        {
+            "context": [
+                "Your first draft was unfortunately not up to scratch.\""
+            ]
+        }
+    ]
+}

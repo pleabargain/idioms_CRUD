@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+
+<!-- search_results.html -->
+{% for idiom in idioms %}
+    <p>{{ idiom.phrase }}</p>
+    <p>{{ idiom.context }}</p>
+    <a href="{{ url_for('edit_idiom', id=idiom.id) }}">Edit</a>
+{% endfor %}
+
+    <table>
+        <thead>
+            <tr>
+                <th>Phrase</th>
+                <th>Context</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for idiom in idioms %}
+            <tr>
+                <td>{{ idiom.phrase }}</td>
+                <td>{{ idiom.context }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
