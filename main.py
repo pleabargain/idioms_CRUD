@@ -106,13 +106,17 @@ def delete_idiom(id):
 @app.route('/import', methods=['POST'])
 def import_json():
     file = request.files['file']
-    data = json.load(file)
-    for idiom in data['idioms']:
-        phrase = idiom.get('phrase', '')  # Use an empty string if 'phrase' is not found
-        context = idiom.get('context', '')  # Use an empty string if 'context' is not found
-        new_idiom = Idiom(phrase=phrase, context=','.join(context) if isinstance(context, list) else context)
-        db.session.add(new_idiom)
-    db.session.commit()
+    if file and file.read(1):
+        file.seek(0)  # Reset file pointer to beginning
+        data = json.load(file)
+        for idiom in data['idioms']:
+            phrase = idiom.get('phrase', '')  # Use an empty string if 'phrase' is not found
+            context = idiom.get('context', '')  # Use an empty string if 'context' is not found
+            new_idiom = Idiom(phrase=phrase, context=','.join(context) if isinstance(context, list) else context)
+            db.session.add(new_idiom)
+        db.session.commit()
+    else:
+        flash("The file is empty.")
     return redirect(url_for('home'))
 
 @app.errorhandler(500)
