@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Idioms CRUD</title>
-    <link rel="stylesheet" href="styles.css">
+    <h1 class="title">Idioms CRUD</h1>    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
-    <h1>Idioms</h1>
+    
 
       <!-- Display current idiom -->
       <div>
         <h2>{{ idiom.phrase }}</h2>
         <p>{{ idiom.context }}</p>
+        <a href="{{ url_for('edit_idiom', id=idiom.id) }}">Edit</a>
     </div>
 
     <!-- Buttons to navigate to the next and previous idioms -->
@@ -30,30 +31,51 @@
 
     <!-- Form to search idioms -->
     <form action="{{ url_for('search_idiom') }}" method="get">
-        <input type="text" name="query" placeholder="Search">
+        <input type="text" name="query" placeholder="Search idioms...">
         <input type="submit" value="Search">
     </form>
 
     <!-- Display all idioms -->
     {% for idiom in idioms %}
-    <div>
-        <h2>{{ idiom.phrase }}</h2>
-        <p>{{ idiom.context }}</p>
-        <!-- Update and Delete links -->
-        <form action="{{ url_for('update_idiom', id=idiom.id) }}" method="post">
-            <input type="text" name="phrase" value="{{ idiom.phrase }}">
-            <textarea name="context">{{ idiom.context }}</textarea>            <input type="submit" value="Update">
-        </form>
-        <a href="{{ url_for('delete_idiom', id=idiom.id) }}">Delete</a>
+        <div>
+            <h2>{{ idiom.phrase }}</h2>
+            {% if idiom.context is iterable and idiom.context is not string %}
+                <ul>
+                {% for context in idiom.context %}
+                    <li>{{ context }}</li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>{{ idiom.context }}</p>
+            {% endif %}
+            <!-- Update and Delete links -->
+<form action="{{ url_for('update_idiom', id=idiom.id) }}" method="post">
+    <div class="input-container">
+        <input type="text" name="phrase" value="{{ idiom.phrase }}" placeholder="Update idiom phrase">
+        <textarea name="context" placeholder="Update idiom context">{{ idiom.context }}</textarea>
     </div>
+    <input type="submit" value="Update">
+</form>
+
+
+            <a href="{{ url_for('delete_idiom', id=idiom.id) }}">Delete</a>
+        </div>
     {% endfor %}
 
-    <!-- Form to add a new idiom -->
-    <form method="POST" action="{{ url_for('add_idiom') }}">
-        <input type="text" name="phrase" required>
-        <textarea name="context" required></textarea>        
-        <input type="submit" value="Add Idiom">
-    </form>
+<!-- Form to add a new idiom -->
+<form method="POST" action="{{ url_for('add_idiom') }}">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="phrase" placeholder="Enter idiom phrase" required>
+            </td>
+            <td>
+                <textarea name="context" placeholder="Enter idiom context" required></textarea>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Add Idiom">
+</form>
 
     <!-- Form to import idioms from a JSON file -->
     <form action="{{ url_for('import_json') }}" method="post" enctype="multipart/form-data">

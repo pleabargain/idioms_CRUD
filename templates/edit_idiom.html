@@ -3,8 +3,25 @@
 
 <head>
     <title>Idioms CRUD</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
 </head>
+
+
+<form action="{{ url_for('update_idiom', id=idiom.id) }}" method="post">
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="phrase" value="{{ idiom.phrase }}" placeholder="Update idiom phrase">
+            </td>
+            <td>
+                <textarea name="context" placeholder="Update idiom context">{{ idiom.context }}</textarea>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Update">
+</form>
 
 <form method="POST">
     <label for="phrase">Phrase:</label>

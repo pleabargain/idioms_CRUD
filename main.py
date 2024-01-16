@@ -75,14 +75,13 @@ def add_idiom():
 
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
 def edit_idiom(id):
-    idiom = Idiom.query.get(id)
+    idiom = Idiom.query.get_or_404(id)
     if request.method == 'POST':
-        data = request.form
-        idiom.phrase = data['phrase']
-        idiom.context = data['context']
+        idiom.phrase = request.form['phrase']
+        idiom.context = request.form['context']
         db.session.commit()
-        return redirect(url_for('home'))
-    return render_template('edit_idiom.html', idiom=idiom)
+        return redirect(url_for('next_idiom'))
+    return render_template('edit.html', idiom=idiom)
 
 
 
