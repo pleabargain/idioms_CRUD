@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
+
+
 <body>
     
 
@@ -15,9 +17,10 @@
         <a href="{{ url_for('edit_idiom', id=idiom.id) }}">Edit</a>
     </div>
 
-    <!-- Buttons to navigate to the next and previous idioms -->
-    <a href="{{ url_for('next_idiom') }}">Next</a>
-    <a href="{{ url_for('previous_idiom') }}">Previous</a>
+    <div class="button-container">
+        <a href="{{ url_for('previous_idiom') }}">Previous</a>
+        <a href="{{ url_for('next_idiom') }}">Next</a>
+    </div>
 
 
 {% with messages = get_flashed_messages() %}
@@ -82,5 +85,14 @@
         <input type="file" name="file">
         <input type="submit" value="Import JSON">
     </form>
+
+    <script>
+        document.getElementById('update-form').addEventListener('submit', function() {
+            alert('Idiom updated successfully!');
+            console.log('Idiom updated');
+        });
+    </script>
+
+
 </body>
 </html>

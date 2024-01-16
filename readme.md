@@ -20,7 +20,12 @@ pipreqs --encoding utf-8 "./"
 ```
 
 
+
 ---
+* js goes inside the BODY tag! doh!
+
+* as soon as I wanted to demonstrate the app, it failed! OFC!
+
 * lots of debugging to get the app started. 
 
 * chatgit hubpilot doesn't wirte the best code out of the box.
@@ -32,7 +37,10 @@ pipreqs --encoding utf-8 "./"
 * Initially it was very much an ETL process!
 
 # to do
+* verify edit.html writes to the DB
 * Clean up the UI
+* * confirm to user that a new item has been added
+* add user log in and authorization
 
 # Done
 done: convert text to json
