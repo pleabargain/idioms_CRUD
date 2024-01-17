@@ -3,6 +3,9 @@ import random
 from flask import Flask, request, render_template, redirect, url_for, session, flash
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import or_
+from sqlalchemy.exc import IntegrityError
+
+
 
 import json
 
@@ -56,7 +59,8 @@ def search_idiom():
     idioms = Idiom.query.filter(or_(Idiom.phrase.contains(query), Idiom.context.contains(query))).all()
     if not idioms:
         return render_template('not_found.html')
-    return render_template('search_results.html', idioms=idioms)
+    # Pass the query to the template
+    return render_template('search_results.html', idioms=idioms, query=query)
 
 
 @app.route('/add', methods=['POST'])
@@ -85,14 +89,50 @@ def edit_idiom(id):
 
 
 
-@app.route('/update/<int:id>', methods=['POST'])
+from flask import request, redirect, url_for
+
+from flask import flash
+
+@app.route('/update_idiom/<int:id>', methods=['POST'])
 def update_idiom(id):
-    data = request.form
+    # Get the idiom from the database
     idiom = Idiom.query.get(id)
-    idiom.phrase = data['phrase']
-    idiom.context = data['context']
-    db.session.commit()
-    return redirect(url_for('home'))
+
+    if idiom:
+        try:
+            # Update the idiom's fields with the form data
+            idiom.phrase = request.form['phrase']
+            idiom.context = request.form['context']
+
+            # Save the changes to the database
+            db.session.commit()
+
+            print('Idiom updated')  # This will print to the server's console
+
+            # Notify the user that the update was successful
+            flash('Idiom updated successfully!')
+
+        except Exception as e:
+            # If an error occurred, roll back the transaction
+            db.session.rollback()
+
+            print('Error updating idiom: ', e)  # This will print to the server's console
+
+            # Notify the user that the update failed
+            flash('An error occurred while updating the idiom. Please try again.')
+
+        # Redirect the user to the idiom page
+        return redirect(url_for('show_idiom', id=id))
+
+    else:
+        # Handle the case where the idiom doesn't exist
+        flash('Idiom not found.')
+        return redirect(url_for('home'))
+
+@app.route('/show/<int:id>')
+def show_idiom(id):
+    idiom = Idiom.query.get_or_404(id)
+    return render_template('show_idiom.html', idiom=idiom)
 
 @app.route('/delete/<int:id>')
 def delete_idiom(id):
@@ -102,9 +142,12 @@ def delete_idiom(id):
     return redirect(url_for('home'))
 
 
+# from sqlalchemy.exc import IntegrityError
+
 @app.route('/import', methods=['POST'])
 def import_json():
     file = request.files['file']
+    new_entries = 0  # Counter for new entries
     if file and file.read(1):
         file.seek(0)  # Reset file pointer to beginning
         data = json.load(file)
@@ -113,10 +156,14 @@ def import_json():
             context = idiom.get('context', '')  # Use an empty string if 'context' is not found
             new_idiom = Idiom(phrase=phrase, context=','.join(context) if isinstance(context, list) else context)
             db.session.add(new_idiom)
-        db.session.commit()
+            try:
+                db.session.commit()
+                new_entries += 1  # Increment the counter
+            except IntegrityError:
+                db.session.rollback()  # Rollback the session if a duplicate is found
     else:
         flash("The file is empty.")
-    return redirect(url_for('home'))
+    return render_template('import_report.html', new_entries=new_entries)
 
 @app.errorhandler(500)
 def handle_500(error):

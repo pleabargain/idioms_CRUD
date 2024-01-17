@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Show Idiom</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+<body>
+    <h1>Show Idiom</h1>
+
+    <h2>Phrase: {{ idiom.phrase }}</h2>
+    <p>Context: {{ idiom.context }}</p>
+
+    <!-- Add a link to the home page -->
+    <a href="{{ url_for('home') }}">Back to Home</a>
+
+</body>
+</html>

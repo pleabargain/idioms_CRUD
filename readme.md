@@ -1,3 +1,10 @@
+# url for this code:
+
+https://github.com/pleabargain/idioms_CRUD
+
+
+current status: 
+Fixing what I broke!
 
 
 # goal 
@@ -7,7 +14,7 @@ and allows user to perform CRUD operations in an HTML interface
 
 # soft requirements
 
-I used github copilot a lot!
+I used github copilot a lot! And I mean a lot!
 
 
 # some mechanics

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Import Report</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+
+<body>
+    <h1>Import Report</h1>
+
+    <p>Number of new entries added to the database: {{ new_entries }}</p>
+
+    <!-- Add a link to the home page -->
+    <a href="{{ url_for('home') }}">Back to Home</a>
+
+</body>
+</html>
