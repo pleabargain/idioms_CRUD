@@ -32,7 +32,16 @@ I don't know how (yet) to add an additional context to an existing phrase. I did
 
 }
 
+```
 
+It should have been more like
+
+```
+Idioms
+    phrase
+        context
+        *
+    category
 
 ```
 

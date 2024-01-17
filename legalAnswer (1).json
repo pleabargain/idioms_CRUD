@@ -1,0 +1,27 @@
+## Bing
+Alright, I will continue to help you create a JSON file that gives idioms about legal terms. Here are some more idioms that you can add to your file:
+
+{
+  "idioms": [
+    {
+      "phrase": "Above the law: Not subject to the laws of society; immune to legal consequences.",
+      "context": [
+        "Some politicians act as if they are above the law and can do whatever they want."
+      ]
+    },
+    {
+      "phrase": "Caught red-handed: To be caught in the act of committing a crime or doing something wrong.",
+      "context": [
+        "The thief was caught red-handed by the security guard as he was trying to break into the store."
+      ]
+    },
+    {
+      "phrase": "Get off on a technicality: To avoid conviction or punishment due to a legal technical error or minor detail.",
+      "context": [
+        "The defendant got off on a technicality because the evidence was obtained illegally."
+      ]
+    }
+  ]
+}
+
+Do you want more idioms about legal terms, or do you have another request for me? 😊
