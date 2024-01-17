@@ -73,6 +73,8 @@ def add_idiom():
         db.session.commit()
         flash("The idiom was added to the database.")
         print(f"The idiom '{new_idiom.phrase}' was added to the database.")
+        # Redirect to the show_idiom route with the id of the new idiom
+        return redirect(url_for('show_idiom', id=new_idiom.id))
     else:
         flash("An idiom with this phrase already exists.")
     return redirect(url_for('home'))
